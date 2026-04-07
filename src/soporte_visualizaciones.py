@@ -89,7 +89,7 @@ class Visualizaciones:
         """
 
         plt.figure(figsize=figsize)
-        sns.barplot(data=self.dataframe, x=x, y=y, hue=hue)
+        sns.barplot(data=self.dataframe, x=x, y=y, hue=hue,errorbar=None)
         plt.title(f"{y} por {x}")
         plt.xlabel(x)
         plt.ylabel(y)
